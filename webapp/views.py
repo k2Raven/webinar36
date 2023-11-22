@@ -6,4 +6,4 @@ def index_view(request):
 
 
 def cat_stats_view(request):
-    pass
+    2 != 0
