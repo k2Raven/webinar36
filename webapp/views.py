@@ -13,4 +13,11 @@ def index_view(request):
 
 def cat_stats_view(request):
     if request.method == "GET":
-        return render(request, 'cat_stats.html')
+        context = {
+            'name': Cat.name,
+            'age': Cat.age,
+            'satiety': Cat.satiety,
+            'happiness': Cat.happiness,
+            'avatar': Cat.avatar
+        }
+        return render(request, 'cat_stats.html', context)
