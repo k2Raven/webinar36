@@ -6,4 +6,6 @@ def index_view(request):
 
 
 def cat_stats_view(request):
+    print('hello')
     2 != 0
+    print('test')
