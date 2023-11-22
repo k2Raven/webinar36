@@ -26,6 +26,16 @@
             </div>
         </div>
     </div>
+    <form action="" method="post">
+        {% csrf_token %}
+        <select class="form-select w-50 mx-auto" aria-label="Default select example" name="action" required>
+            <option value="play">Поиграть с котом</option>
+            <option value="feed">Покормить кота</option>
+            <option value="sleep">уложить спать кта</option>
+        </select>
+        <button type="submit" class="btn btn-primary  mx-auto d-block">создать</button>
+
+    </form>
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

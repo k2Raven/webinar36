@@ -21,3 +21,13 @@ def cat_stats_view(request):
             'avatar': Cat.avatar
         }
         return render(request, 'cat_stats.html', context)
+    elif request.method == "POST":
+        action = request.POST.get('action')
+        if action == 'play':
+            Cat.play()
+        elif action == 'feed':
+            pass
+        elif action == 'sleep':
+            pass
+        return HttpResponseRedirect('/cat_stats')
+
