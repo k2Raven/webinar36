@@ -2,4 +2,4 @@ from django.shortcuts import render
 
 
 def index_view(request):
-    pass
+    5 == 0
