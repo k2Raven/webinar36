@@ -2,7 +2,8 @@ from django.shortcuts import render
 
 
 def index_view(request):
-    5 == 0
+    if request.method == "GET":
+        return render(request, 'index.html')
 
 
 def cat_stats_view(request):
